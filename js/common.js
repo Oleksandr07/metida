@@ -14,12 +14,13 @@ $(function(){
 	});
 	$('input[placeholder], textarea[placeholder]').placeholder();
 
-
+	/*-------------------------         show lang list           --------------------------------*/
 	$('.lang-head').click(function(event) {
 		$(this).toggleClass('active');
 		$('.lang-list').slideToggle(300);
 	});
 
+	/*-------------------------         switch lang           --------------------------------*/
 	$('.lang-list a[data-lang="' + $('.lang-current').attr('data-lang') + '"]').parents('li').hide();
 	$('.lang-list a').click(function(event) {
 		$('.lang-list li').show();
@@ -27,12 +28,23 @@ $(function(){
 		$('.lang-current').text($(this).attr('data-lang'));
 		return false;
 	});
+
+	/*-------------------------         hide lang list           --------------------------------*/
 	$(document).click( function(event){
 		if($(event.target).closest('.lang').length) 
 			return;
 		$('.lang-head').removeClass('active');
 		$('.lang-list').slideUp(300);
 		event.stopPropagation();
+	});
+
+	/*-------------------------         slider           --------------------------------*/
+	$('.head-slider').slick({
+		dots: true,
+		arrows: false,
+		speed: 500,
+		slidesToShow: 1,
+  		slidesToScroll: 1
 	});
 
 
