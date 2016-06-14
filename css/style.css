@@ -427,6 +427,43 @@ header{
 	position: relative;
 	padding-top: 50px;
 }
+	.suggestions-inner{
+		position: relative;
+	}
+		.suggestions table{
+			width: 100%;
+			border-collapse: collapse;
+		}
+			.suggestions table tbody tr td{
+				vertical-align: middle;
+				color: #fff;
+				font-size: 24px;
+				font-weight: 700;
+				border-top: 2px solid #ffbb54;
+				border-bottom: 2px solid #ffbb54;
+				padding: 10px 0;
+			}
+				.suggestions table tbody tr td:last-child{
+					text-align: right;
+				}
+				.suggestions table tbody tr td a{
+					color: #fff;
+					font-size: 18px;
+					text-decoration: none;
+					text-transform: uppercase;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+					.suggestions table tbody tr td a:hover{
+						color: #ffbb54;
+						text-decoration: underline;
+					}
+					.suggestions table tbody tr td a img{
+						vertical-align: middle;
+						margin-left: 10px;
+					}
 /*--------------------    contacts    --------------------*/
 .contacts{
 	position: relative;
