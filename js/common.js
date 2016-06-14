@@ -50,12 +50,12 @@ $(function(){
 
 	//------------------    menu scroll    -------------------------------
 
-	/*$('.top_menu li a.subNavBtn').on('click',function(){
-		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top-30},800);
+	$('.top-menu li a').on('click',function(){
+		$('html,body').animate({scrollTop:$($(this).attr('href')).offset().top},800);
 		return false;
 	});
 
-    function setNavCurrentSection(){
+    /*function setNavCurrentSection(){
 		var s_top=$(document).scrollTop();
 		var w_hgh=window.innerHeight;
 		var b_hgh=$('body').outerHeight();

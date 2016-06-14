@@ -316,6 +316,112 @@ header{
 	position: relative;
 	padding-top: 50px;
 }
+	.mission-inner{
+		position: relative;
+		padding-top: 1px;
+	}
+		.mission-box{
+			position: relative;
+			color: #fff;
+			margin-top: 90px;
+		}	
+			.mission-box:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.mission-box:first-child{
+				margin-top: 40px;
+			}
+			.mission-head{
+				position: relative;
+				float: left;
+				width: 580px;
+				height: 515px;
+				margin-top: -40px;
+			}
+				.mission-box:nth-child(odd) .mission-head{
+					float: right;
+					margin-left: -180px;
+				}
+				.mission-box:nth-child(even) .mission-head{
+					margin-right: -180px;
+				}
+				.mission-head img{
+					max-width: 100%;
+				}
+			.mission-body{
+				position: relative;
+				float: left;
+				width: 860px;
+				height: 440px;
+				text-align: center;
+				z-index: 0;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+				.mission-body:before{
+					content: '';
+					position: absolute;
+					background: rgba(13,13,13,0.7);
+					top: 20px;
+					width: 100%;
+					height: 100%;
+					z-index: -1;
+				}
+					.mission-box:nth-child(odd) .mission-body:before{
+						right: 20px;
+					}
+					.mission-box:nth-child(even) .mission-body:before{
+						left: 20px;
+					}
+				.mission-body:after{
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					height: 100%;
+					border: 5px solid #ffbb54;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+				.mission-content{
+					position: relative;
+					display: table-cell;
+					vertical-align: middle;
+					width: 860px;
+					height: 440px;
+					padding: 20px 80px;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
+					.mission-title{
+						position: relative;
+						font-size: 24px;
+						font-weight: 700;
+						margin-bottom: 60px;
+					}
+						.mission-title:before{
+							content: '';
+							position: absolute;
+							background: #ffbb54;
+							left: 0;
+							right: 0;
+							bottom: -35px;
+							width: 120px;
+							height: 5px;
+							margin: 0 auto;
+						}
+					.mission-text{
+						position: relative;
+						font-size: 16px;
+						font-weight: 300;
+						line-height: 24px;
+					}
 /*--------------------    suggestions    --------------------*/
 .suggestions{
 	position: relative;
