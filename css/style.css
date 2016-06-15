@@ -25,14 +25,18 @@ body{background:#000;width:100%;color:#000;font-size:14px;font-family: 'Roboto',
 :-ms-input-placeholder { color: inherit; font-size: inherit;} /* ie */
 input:-moz-placeholder { color: inherit; font-size: inherit;}
 input, textarea {outline:none;}
-input[type='text'], input[type='tel'], input[type='password'], input[type='email'], textarea{background:#fff;width:100%;height:30px;color:#333333;font-size:14px;border:1px solid #999;border-radius:2px;padding:0 15px;
+input[type='text'], input[type='tel'], input[type='password'], input[type='email'], textarea{background:transparent;width:100%;height:42px;color:#fff;font-size:18px;font-weight: 700;border:2px solid #fff;padding:0 15px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
-input[type='text']:hover, input[type='tel']:hover, input[type='password']:hover, input[type='email']:hover, textarea:hover {/* input hover */}
-input[type='text']:focus, input[type='tel']:focus, input[type='password']:focus, input[type='email']:focus, textarea:focus{/* input active */}
-textarea{height:60px;line-height: 1;padding:10px 15px;overflow:auto;resize:none;}
+input[type='text']:hover, input[type='tel']:hover, input[type='password']:hover, input[type='email']:hover, textarea:hover {border-color: #ffbb54;}
+input[type='text']:focus, input[type='tel']:focus, input[type='password']:focus, input[type='email']:focus, textarea:focus{border-color: #ffbb54;}
+textarea{height:180px;font-size:16px;font-weight: 300;font-family: 'Roboto', sans-serif;line-height: 1.25;padding:10px 15px;overflow:auto;resize:vertical;}
 
 h2{position: relative;color: #fff;font-size: 30px;font-weight: 700;text-align: center;text-transform: uppercase;margin-bottom: 50px;}
 /*--------------------    all settings    --------------------*/
@@ -49,26 +53,53 @@ h2{position: relative;color: #fff;font-size: 30px;font-weight: 700;text-align: c
 .a-button{
 	position: relative;
 	display: inline-block;
-	background: inherit;
-	width: 100%;
-	color: inherit;
+	background: transparent;
+	width: auto;
+	height: 50px;
+	color: #fff;
 	font-size: 14px;
-	line-height: 1.5;
+	font-weight: 900;
+	line-height: 50px;
 	text-align: center;
 	text-decoration: none;
-	border: 0;
+	text-transform: uppercase;
+	border: 2px solid #fff;
+	padding: 0 25px 0 35px;
 	outline: none;
 	cursor: pointer;
+	z-index: 1;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
-.a-button:hover{
-	background: inherit;
+	.a-button:hover{
+		color: #ffbb54;
+		border-color: #ffbb54;
+	}
+	.a-button:active{
+		
+	}
+.button-arr{
+	position: relative;
+	background: url('../img/button-arr.png') right center no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 12px;
+	margin-left: 8px;
+	margin-top: -2px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
-.a-button:active{
-	background: inherit;
-}
+	.a-button:hover .button-arr{
+		background-position: left center;
+	}
 
 .wrapper{
 	position: relative;
@@ -159,6 +190,23 @@ header{
 				margin-top: -3px;
 				margin-left: 5px;
 			}
+			.login-arr{
+				position: relative;
+				background: url('../img/login.png') right center no-repeat;
+				display: inline-block;
+				vertical-align: middle;
+				width: 17px;
+				height: 16px;
+				margin-top: -3px;
+				margin-left: 8px;
+				-webkit-transition: all 0.3s ease;
+				-moz-transition: all 0.3s ease;
+				-o-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+			}
+				.login a:hover .login-arr{
+					background-position: left center;
+				}
 		.lang{
 			position: relative;
 			float: left;
@@ -189,6 +237,23 @@ header{
 				.lang-current{
 					padding-left: 5px;
 				}
+				.lang-arr{
+					position: relative;
+					background: url('../img/lang-arr.png') center bottom no-repeat;
+					display: inline-block;
+					vertical-align: middle;
+					width: 12px;
+					height: 9px;
+					margin-top: -2px;
+					margin-left: 4px;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+					.lang-head:hover .lang-arr{
+						background-position: center top;
+					}
 			.lang-list{
 				position: absolute;
 				background: #000;
@@ -469,6 +534,66 @@ header{
 	position: relative;
 	padding-top: 50px;
 }
+	.contacts-inner{
+		position: relative;
+		padding-top: 40px;
+	}
+		#map{
+			position: relative;
+			float: right;
+			width: 760px;
+			height: 515px;
+			margin-top: -40px;
+			margin-left: -80px;
+		}
+		.contacts-box{
+			position: relative;
+			float: left;
+			width: 580px;
+			height: 440px;
+			z-index: 0;
+		}
+			.contacts-box:before{
+				content: '';
+				position: absolute;
+				background: rgba(13,13,13,0.7);
+				top: 20px;
+				right: 20px;
+				width: 100%;
+				height: 100%;
+				z-index: -1;
+			}
+			.contacts-box:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				border: 5px solid #ffbb54;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+			.contacts-content{
+				position: relative;
+				display: table-cell;
+				vertical-align: middle;
+				width: 580px;
+				height: 440px;
+				color: #fff;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 46px;
+				text-align: center;
+				padding: 20px 60px;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+				.contacts-content .a-button{
+					margin-top: 30px;
+				}
 /*--------------------    footer    --------------------*/
 footer{
 	position: relative;
@@ -486,10 +611,106 @@ footer{
 /*--------------------    modal    --------------------*/
 .modal{
 	position: relative;
+	background: #000;
 	display: none;
-	width: 400px;
-	padding: 20px 20px;
+	width: 580px;
+	color: #fff;
+	text-align: center;
+	border: 5px solid #ffbb54;
+	padding: 50px 85px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
+	.form-title{
+		position: relative;
+		font-size: 24px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	.form-group{
+		position: relative;
+		text-align: left;
+		margin-bottom: 15px;
+	}
+		.form-group label{
+			position: relative;
+			display: block;
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 5px;
+		}
+			.form-group label small{
+				font-weight: 14;
+				font-weight: 300;
+			}
+	.form-button{
+		position: relative;
+		display: inline-block;
+		margin: 20px auto 0;
+	}
+		.form-button:before{
+			content: '';
+			position: absolute;
+			background: url('../img/button-arr.png') right center no-repeat;
+			top: 50%;
+			right: 45px;
+			width: 8px;
+			height: 12px;
+			margin-top: -4px;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+			.form-button:hover:before{
+				background-position: left center;
+			}
+		.form-button .a-button{
+			padding: 0 60px 0 50px;
+		}
+	.form-error{
+		position: relative;
+		color: #ff5454;
+		font-size: 16px;
+		font-weight: 700;
+		visibility: hidden;
+	}
+	.input-error{
+		border-color: #ff5454;
+	}
+#modal-success{
+	font-size: 18px;
+	font-weight: 300;
+}
+	#modal-success .form-title{
+		margin-bottom: 80px;
+	}
+		#modal-success .form-title:before{
+			content: '';
+			position: absolute;
+			background: #ffbb54;
+			left: 0;
+			right: 0;
+			bottom: -45px;
+			width: 120px;
+			height: 5px;
+			margin: 0 auto;
+		}
+
+body .fancybox-close{
+	background: url('../img/close.png') center bottom no-repeat;
+	top: 18px;
+	right: 18px;
+	width: 18px;
+	height: 18px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+	body .fancybox-close:hover{
+		background-position: center top;
+	}
