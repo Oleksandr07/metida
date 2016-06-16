@@ -12,12 +12,14 @@
 			<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" media="screen" >
 			<link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
 			<link href="css/style.css" rel="stylesheet" media="screen">
+			<link href="css/media.css" rel="stylesheet" media="screen">
 		<!-- END OF CSS -->
 		<!--SCRIPT -->
 			<script src="js/jquery-1.11.1.min.js"></script>
 			<script src="js/jquery.placeholder.js"></script>
 			<script src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
 			<script src="js/slick/slick.min.js"></script>
+			<script src="js/jquery.maskedinput.js"></script>
 			<script src="js/common.js"></script>
 			<!--[if IE]>  
 				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
@@ -34,16 +36,13 @@
 					</a>
 				</div>
 				<div class="header-right">
-					<div class="top-menu">
-						<ul>
-							<li><a href="#head">О нас</a></li>
-							<li><a href="#mission">Социальная миссия</a></li>
-							<li><a href="#suggestions">предложения</a></li>
-							<li><a href="#contacts">контакты</a></li>
-						</ul>
-					</div>
-					<div class="login">
-						<a href="">вход для сотрудников<span class="login-arr"></span></a>
+					<div class="navbar-box">
+						<div class="navbar">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
 					</div>
 					<div class="lang">
 						<div class="lang-head">
@@ -64,64 +63,50 @@
 							</ul>
 						</div>
 					</div>
+					<div class="top-menu">
+						<div class="container">
+							<ul>
+								<li><a href="#head">О нас</a></li>
+								<li><a href="#mission">Социальная миссия</a></li>
+								<li><a href="#suggestions">предложения</a></li>
+								<li><a href="#contacts">контакты</a></li>
+								<li class="login"><a href="">вход для сотрудников<span class="login-arr"></span></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
 		<div id="head" class="head">
 			<div class="container">
-				<div class="head-slider">
-					<div>
-						<div class="head-box" style="background-image: url(img/slider-img-1.jpg)">
-							<div class="head-body">
-								<div class="head-title">ООО «Метида» — украинская энергетическая компания с многолетним опытом работы на национальном и международном рынке</div>
-								<div class="head-subtitle">
-									<p>Компания специализируется на торговле и поставках промышленности и предприятиям топливно-энергетического комплекса природного газа, нефтепродуктов и электроэнергии.</p>
-								</div>
-								<div class="head-text">
-									<p>Среди наших партнеров — крупнейшие частные и государственные предприятия Украины и целый ряд ведущих энергетических компаний Европы.Высокий класс менеджмента, богатый опыт, широкие международные связи и высокая репутация на рынке позволяют «Метиде» предлагать клиентам гибкие и взаимовыгодные решения. В условиях либерализации украинского рынка энергоносителей и его интеграции в общеевропейский наша Компания ставит перед собой цель в ближайшие годы превратиться в крупного импортера и поставщика украинским потребителям природного газа и других энергетических продуктов.</p>
-								</div>
-							</div>
+				<div class="head-box">
+					<div class="head-body">
+						<div class="head-title">ООО «Метида» — украинская энергетическая компания с многолетним опытом работы на национальном и международном рынке</div>
+						<div class="head-subtitle">
+							<p>Компания специализируется на торговле и поставках промышленности и предприятиям топливно-энергетического комплекса природного газа, нефтепродуктов и электроэнергии.</p>
+						</div>
+						<div class="head-text">
+							<p>Среди наших партнеров — крупнейшие частные и государственные предприятия Украины и целый ряд ведущих энергетических компаний Европы.Высокий класс менеджмента, богатый опыт, широкие международные связи и высокая репутация на рынке позволяют «Метиде» предлагать клиентам гибкие и взаимовыгодные решения. В условиях либерализации украинского рынка энергоносителей и его интеграции в общеевропейский наша Компания ставит перед собой цель в ближайшие годы превратиться в крупного импортера и поставщика украинским потребителям природного газа и других энергетических продуктов.</p>
+						</div>
+						<div class="head-more">
+							<a href="" class="a-more">подробнее<span class="button-arr"></span></a>
+							<a href="" class="a-back"><span class="back-arr"></span>назад</a>
 						</div>
 					</div>
-					<div>
-						<div class="head-box" style="background-image: url(img/slider-img-2.jpg)">
-							<div class="head-body">
-								<div class="head-title">ООО «Метида» — украинская энергетическая компания с многолетним опытом работы на национальном и международном рынке</div>
-								<div class="head-subtitle">
-									<p>Компания специализируется на торговле и поставках промышленности и предприятиям топливно-энергетического комплекса природного газа, нефтепродуктов и электроэнергии.</p>
-								</div>
-								<div class="head-text">
-									<p>Среди наших партнеров — крупнейшие частные и государственные предприятия Украины и целый ряд ведущих энергетических компаний Европы.Высокий класс менеджмента, богатый опыт, широкие международные связи и высокая репутация на рынке позволяют «Метиде» предлагать клиентам гибкие и взаимовыгодные решения. В условиях либерализации украинского рынка энергоносителей и его интеграции в общеевропейский наша Компания ставит перед собой цель в ближайшие годы превратиться в крупного импортера и поставщика украинским потребителям природного газа и других энергетических продуктов.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="head-box" style="background-image: url(img/slider-img-3.jpg)">
-							<div class="head-body">
-								<div class="head-title">ООО «Метида» — украинская энергетическая компания с многолетним опытом работы на национальном и международном рынке</div>
-								<div class="head-subtitle">
-									<p>Компания специализируется на торговле и поставках промышленности и предприятиям топливно-энергетического комплекса природного газа, нефтепродуктов и электроэнергии.</p>
-								</div>
-								<div class="head-text">
-									<p>Среди наших партнеров — крупнейшие частные и государственные предприятия Украины и целый ряд ведущих энергетических компаний Европы.Высокий класс менеджмента, богатый опыт, широкие международные связи и высокая репутация на рынке позволяют «Метиде» предлагать клиентам гибкие и взаимовыгодные решения. В условиях либерализации украинского рынка энергоносителей и его интеграции в общеевропейский наша Компания ставит перед собой цель в ближайшие годы превратиться в крупного импортера и поставщика украинским потребителям природного газа и других энергетических продуктов.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="head-box" style="background-image: url(img/slider-img-4.jpg)">
-							<div class="head-body">
-								<div class="head-title">ООО «Метида» — украинская энергетическая компания с многолетним опытом работы на национальном и международном рынке</div>
-								<div class="head-subtitle">
-									<p>Компания специализируется на торговле и поставках промышленности и предприятиям топливно-энергетического комплекса природного газа, нефтепродуктов и электроэнергии.</p>
-								</div>
-								<div class="head-text">
-									<p>Среди наших партнеров — крупнейшие частные и государственные предприятия Украины и целый ряд ведущих энергетических компаний Европы.Высокий класс менеджмента, богатый опыт, широкие международные связи и высокая репутация на рынке позволяют «Метиде» предлагать клиентам гибкие и взаимовыгодные решения. В условиях либерализации украинского рынка энергоносителей и его интеграции в общеевропейский наша Компания ставит перед собой цель в ближайшие годы превратиться в крупного импортера и поставщика украинским потребителям природного газа и других энергетических продуктов.</p>
-								</div>
-							</div>
-						</div>
-					</div>
+				</div>
+			</div>
+			<div class="head-slider">
+				<div>
+					<div class="head-item" style="background-image: url(img/slider-img-1.jpg)"></div>
+				</div>
+				<div>
+					<div class="head-item" style="background-image: url(img/slider-img-2.jpg)"></div>
+				</div>
+				<div>
+					<div class="head-item" style="background-image: url(img/slider-img-3.jpg)"></div>
+				</div>
+				<div>
+					<div class="head-item" style="background-image: url(img/slider-img-4.jpg)"></div>
 				</div>
 			</div>
 		</div>
@@ -130,9 +115,6 @@
 				<h2>социальная миссия</h2>
 				<div class="mission-inner">
 					<div class="mission-box">
-						<div class="mission-head">
-							<img src="img/mission-img-1.jpg" alt="">
-						</div>
 						<div class="mission-body">
 							<div class="mission-content">
 								<div class="mission-title">
@@ -143,11 +125,9 @@
 								</div>
 							</div>
 						</div>
+						<div class="mission-head" style="background-image: url('img/mission-img-1.jpg')"></div>
 					</div>
 					<div class="mission-box">
-						<div class="mission-head">
-							<img src="img/mission-img-2.jpg" alt="">
-						</div>
 						<div class="mission-body">
 							<div class="mission-content">
 								<div class="mission-title">
@@ -158,6 +138,7 @@
 								</div>
 							</div>
 						</div>
+						<div class="mission-head" style="background-image: url('img/mission-img-2.jpg')"></div>
 					</div>
 				</div>
 			</div>
@@ -181,8 +162,17 @@
 			<div class="container">
 				<h2>контакты</h2>
 				<div class="contacts-inner">
+					<div class="contacts-box">
+						<div class="contacts-content">
+							<p>г. Киев, ул. Большая Васильковская 29 Б</p>
+							<p>Тел: +38 044 287-42-29</p>
+							<p>Факс: +38 044 287-21-62</p>
+							<p>Email: metidagaz@ukr.net</p>
+							<a href="#modal-window" class="a-button fancybox">написать нам <span class="button-arr"></span></a>
+						</div>
+					</div>
 					<div id="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.149464744034!2d30.514601515957974!3d50.43831659611981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe9fc295e7%3A0x34e3138fba96bd8!2z0LLRg9C7LiDQktC10LvQuNC60LAg0JLQsNGB0LjQu9GM0LrRltCy0YHRjNC60LAsIDI50JEsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1465975133686" width="760" height="515" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.149464744034!2d30.514601515957974!3d50.43831659611981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cefe9fc295e7%3A0x34e3138fba96bd8!2z0LLRg9C7LiDQktC10LvQuNC60LAg0JLQsNGB0LjQu9GM0LrRltCy0YHRjNC60LAsIDI50JEsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsCwgMDIwMDA!5e0!3m2!1sru!2sru!4v1465975133686" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 						<!-- 
 						<script type="text/javascript">
@@ -203,15 +193,6 @@
 						</script>
 						<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
 						-->
-					</div>
-					<div class="contacts-box">
-						<div class="contacts-content">
-							<p>г. Киев, ул. Большая Васильковская 29 Б</p>
-							<p>Тел: +38 044 287-42-29</p>
-							<p>Факс: +38 044 287-21-62</p>
-							<p>Email: metidagaz@ukr.net</p>
-							<a href="#modal-window" class="a-button fancybox">написать нам <span class="button-arr"></span></a>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -244,9 +225,6 @@
 				<div class="form-error">Пожалуйста, заполните поля!</div>
 				<div class="form-button">
 					<input class="a-button" type="submit" value="отправить">
-				</div>
-				<div class="form-button">
-					<a href="#modal-success" class="a-button fancybox">отправить</a>
 				</div>
 			</form>
 		</div>
